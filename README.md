@@ -1,0 +1,2 @@
+# PackageQuote
+The Final project is to create my first package. the package I will be making will you a rough estimate on how much you would spend to send a parcel. The reason I have chosen to make somthing like this is because I'm working at UPS with 1 year experience so far so I have a lot of first hand experience with pricing. Functions should give you a price for shipping, and estimated time frame  for how many days, and how much to box an item up.
