@@ -1,4 +1,4 @@
-Package: PackageQuote
+Package: ShippingCost
 Type: Package
 Title: Gives you the cost of shipping a package within the united states
 Version: 0.1
@@ -8,7 +8,8 @@ Description: the quote is dependent on three different factors the weight, size 
     how many miles it has to travel. each catagory will have base prices and different thresholds.
     the goal is for the user to input the three variables and the function will give you a price.
     other functions shall include estimated arrival dates and cost to pack the item. 
-Depends: R (>= 4.1.2)
+Depends: R (>= 4.2.0)
 License: CC0
 Encoding: UTF-8
 LazyData: true
+RoxygenNote: 7.1.2
