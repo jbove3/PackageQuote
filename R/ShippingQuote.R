@@ -75,7 +75,7 @@ ShippingCost <- function(volume, weight, distance){
   if(volume > 22000){
     cost <- "Your package is too large to ship by non freight means"
   }else if(volume < 22000){
-    cost <- ((distance * 0.006) + (weight * 0.03) + (volume * 0.0065))
+    cost <- ((distance * 0.01) + (weight * 0.07) + (volume * 0.0065))
   }
 
   #bottomline cost can't be less than this value
@@ -85,3 +85,29 @@ ShippingCost <- function(volume, weight, distance){
   return(cost)
 }
 
+#' Title
+#'
+#' @param miles A numeric vector used in calculation for days until package arrives
+#'
+#' @return number if business days
+#' @export
+#'
+#' @example DaysTillArrival(2000)
+DaysTillArrival <- function(miles){
+  if(miles > 0 && miles <= 300){
+    Days = 1
+  }else if(miles > 300 && miles <= 700){
+    Days = 2
+  }else if(miles > 700 && miles <= 1300){
+    Days = 3
+  }else if(miles > 1300 && miles <= 2100){
+    Days = 4
+  }else if(miles > 2100 && miles <= 3000){
+    Days = 5
+  }else if (miles > 3000){
+    Days <- NA
+  }
+  return(Days)
+}
+
+DaysTillArrival(2500)
